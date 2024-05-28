@@ -1,0 +1,163 @@
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+}
+
+body {
+  margin: 0;
+  font-family: "Source Sans Pro", sans-serif;
+  color: #0e0e0e;
+  background-color: #fafafa;
+}
+
+/* NAVIGATION */
+
+header {
+  background-color: #ffffff;
+  padding-right: 1.562em;
+}
+
+.icon {
+  width: 25px;
+  margin-left: 1.562em;
+}
+
+.logo {
+  font-weight: 800;
+}
+
+ul {
+  list-style-type: none;
+  display: flex;
+  align-items: center;
+  gap: 0.125em;
+  padding: 1.562em;
+  margin: 0;
+}
+
+.nav-home {
+  margin-left: auto;
+  margin-right: 1.25em;
+}
+
+li {
+  cursor: pointer;
+}
+
+a {
+  color: #0e0e0e;
+  text-decoration: none;
+}
+
+/* HERO IMAGE & TEXT */
+
+.hero-post {
+  display: flex;
+  flex-direction: column;
+  background-image: url("images/hero-img.png");
+  background-size: cover;
+  min-height: 490px;
+  color: white;
+}
+
+.hero-text {
+  margin: auto auto 2.5em 2.5em;
+  width: 70%;
+}
+
+h1 {
+  font-size: 2.5rem;
+  margin: 0.1em auto;
+}
+
+p {
+  font-size: 1.125rem;
+  line-height: 1.35;
+}
+
+.container {
+  width: 90%;
+  max-width: 900px;
+  padding-top: 1.5em;
+  margin: 0 auto;
+}
+
+/* CSS GRID SECTION */
+
+.posts {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(240px, 1fr));
+  gap: 1em;
+}
+
+#article-4,
+#article-5,
+#article-6 {
+  display: none;
+}
+
+img {
+  width: 100%;
+}
+
+article {
+  margin-bottom: 1em;
+}
+
+.article-info {
+  text-transform: uppercase;
+}
+
+.article-img {
+  margin-bottom: 1em;
+}
+
+.article-title {
+  font-size: 1.5rem;
+  margin: 0.5em 0 0.35em 0;
+}
+
+.article-preview {
+  margin-top: 0;
+}
+
+article p {
+  line-height: 1.3;
+}
+
+/* VIEW MORE BUTTON */
+.view-more-btn {
+  display: block;
+  margin: auto;
+  border: none;
+  background: transparent;
+  text-decoration: underline;
+  margin-bottom: 3em;
+  color: #0e0e0e;
+  font-weight: 800;
+  font-size: 1rem;
+}
+
+.view-more-btn:hover {
+  cursor: pointer;
+}
+
+/* FOOTER */
+
+footer {
+  text-align: center;
+  background-color: #202020;
+  font-size: 12px;
+  padding: 1.562em;
+}
+
+.footer-text {
+  color: #ececec;
+  font-size: 12px;
+  margin-bottom: 0;
+}
+
+.copyright {
+  color: #d7d7d7;
+}
